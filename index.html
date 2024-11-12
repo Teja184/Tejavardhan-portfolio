@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tejavardhan Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <html class="scroll-smooth"></html>
 </head>
 <body  class="bg-black text-white m-4" id="theme">
     <main>
         <nav class="flex relative">
             <h1 class="text-3xl">Tejavardhan Portfolio</h1>
             <ul class="flex absolute gap-x-4 right-0">
-                <li class="hover:cursor-pointer">About</li>
-                <li class="hover:cursor-pointer">Experince</li>
-                <li class="hover:cursor-pointer">Projects</li>
-                <li class="hover:cursor-pointer" id="change">Light Mode</li>
+                <a href="#about" class="hover:cursor-pointer hover:text-cyan-400">About</a>
+                <a href="#experience" class="hover:cursor-pointer hover:text-cyan-400">Experince</a>
+                <a href="#projects" class="hover:cursor-pointer hover:text-cyan-400">Projects</a>
+                <button  class="h-7 w-7 rounded" id="change"><img src="https://cdn-icons-png.flaticon.com/128/9554/9554481.png" alt=""></button>
             </ul>
             
         </nav>
-        <section class="About m-12">
+        <section class="About m-12" id="about">
             <h1 class="text-2xl">About</h1>
             <p class="mt-4 mx-12 whitespace-pre-line">
                 Hello! I'm Tejavardhan, a passionate student embarking on my journey into the world of web development. As a budding web developer, I'm eager to turn my curiosity and creativity into real-world applications. My journey began with a fascination for how websites are built and a desire to create beautiful, user-friendly digital experiences.
@@ -29,7 +30,7 @@
             </p>
         </section>
 
-        <section class="Experience m-12">
+        <section class="Experience m-12" id="experience">
             <h1 class="text-2xl">Experience</h1>
             <p class="mx-12 whitespace-pre-line">
                 <span class="text-xl font-bold">Internship on AIML in IBM Skillsbuild</span>
@@ -41,7 +42,7 @@
             </p>
         </section>
 
-        <section class="Projects m-12">
+        <section class="Projects m-12" id="projects">
             <h1 class="text-2xl">Projects</h1>
             <p class="mx-12 whitespace-pre-line">
                 <span class="text-xl font-bold">Youtube Clone</span>
