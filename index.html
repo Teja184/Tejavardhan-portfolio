@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejavardhan Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body  class="bg-black text-white m-4" id="theme">
+    <main>
+        <nav class="flex relative">
+            <h1 class="text-3xl">Tejavardhan Portfolio</h1>
+            <ul class="flex absolute gap-x-4 right-0">
+                <li class="hover:cursor-pointer">About</li>
+                <li class="hover:cursor-pointer">Experince</li>
+                <li class="hover:cursor-pointer">Projects</li>
+                <li class="hover:cursor-pointer" id="change">Light Mode</li>
+            </ul>
+            
+        </nav>
+        <section class="About m-12">
+            <h1 class="text-2xl">About</h1>
+            <p class="mt-4 mx-12 whitespace-pre-line">
+                Hello! I'm Tejavardhan, a passionate student embarking on my journey into the world of web development. As a budding web developer, I'm eager to turn my curiosity and creativity into real-world applications. My journey began with a fascination for how websites are built and a desire to create beautiful, user-friendly digital experiences.
+                I'm currently honing my skills in HTML, CSS, and JavaScript, and I'm excited to expand my knowledge with more advanced technologies like React and Node.js. Whether it's crafting a simple static page or diving into dynamic content, I enjoy every step of the development process. 
+                In addition to coding, I love collaborating on projects, as I believe teamwork and shared learning are key to innovation. I'm constantly seeking opportunities to improve and take on new challenges, be it through personal projects, coursework, or internships. 
+
+                Thank you for visiting my portfolio. I'm excited to share my journey with you and look forward to connecting!
+            </p>
+        </section>
+
+        <section class="Experience m-12">
+            <h1 class="text-2xl">Experience</h1>
+            <p class="mx-12 whitespace-pre-line">
+                <span class="text-xl font-bold">Internship on AIML in IBM Skillsbuild</span>
+                <span>
+                    During my recent internship, I delved into the fascinating world of machine learning and artificial intelligence. I had the opportunity to explore various machine learning models, gaining a comprehensive understanding of their applications and potential across different domains.
+                    One of my key projects involved creating a sophisticated chatbot using the IBM Watson framework. This experience was immensely enriching, as I learned how to train the model with diverse inputs and examples, enabling it to understand and respond to user queries effectively. The process of developing this chatbot honed my skills in data preprocessing, model training, and fine-tuning to achieve optimal performance.
+                    This internship not only enhanced my technical abilities but also ignited my passion for AI and its transformative power. I’m eager to continue exploring and contributing to this dynamic field, leveraging AI to solve real-world problems and create innovative solutions.
+                </span>
+            </p>
+        </section>
+
+        <section class="Projects m-12">
+            <h1 class="text-2xl">Projects</h1>
+            <p class="mx-12 whitespace-pre-line">
+                <span class="text-xl font-bold">Youtube Clone</span>
+                <span>
+                    In one of my recent projects, I created a static YouTube webpage using HTML and CSS. This project allowed me to dive deep into essential web development concepts and enhance my technical skills.
+                    I utilized fundamental HTML elements such as div tags for layout structure, img tags for embedding images, and p tags for text content. To style the webpage, I leveraged CSS technologies, particularly focusing on the flexbox layout module, which helped me achieve a responsive and flexible design.
+                    Through this project, I gained hands-on experience with crucial CSS properties, including margin and padding adjustments, to ensure precise spacing and alignment. This exercise not only strengthened my understanding of HTML and CSS but also demonstrated the importance of these technologies in creating visually appealing and user-friendly web pages.
+                    Overall, this project was an invaluable learning experience that solidified my foundational web development skills and sparked my interest in further exploring front-end development.
+                </span>
+
+            </p>
+
+        </section>
+
+    </main>
+    <script>
+        const chang=document.getElementById("change")
+        chang.addEventListener("click",()=>{
+            const body = document.getElementById('theme');
+            body.classList.toggle('bg-black');
+            body.classList.toggle('text-white');
+            body.classList.toggle('bg-white');
+            body.classList.toggle('text-black');
+        })
+    </script>
+    
+</body>
+</html>
